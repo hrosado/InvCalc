@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InvCalcModelStoreContainer" CdmEntityContainer="InvCalcEntities">
+    <EntitySetMapping Name="PrimaryTables">
+      <EntityTypeMapping TypeName="InvCalcModel.PrimaryTable">
+        <MappingFragment StoreEntitySet="PrimaryTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="InitialInvestment" ColumnName="InitialInvestment" />
+          <ScalarProperty Name="TickerSymbol" ColumnName="TickerSymbol" />
+          <ScalarProperty Name="PurchasePrice" ColumnName="PurchasePrice" />
+          <ScalarProperty Name="PurchaseShares" ColumnName="PurchaseShares" />
+          <ScalarProperty Name="PercentageDesired" ColumnName="PercentageDesired" />
+          <ScalarProperty Name="TargetSalesPrice" ColumnName="TargetSalesPrice" />
+          <ScalarProperty Name="InvestmentYield" ColumnName="InvestmentYield" />
+          <ScalarProperty Name="EndBalance" ColumnName="EndBalance" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

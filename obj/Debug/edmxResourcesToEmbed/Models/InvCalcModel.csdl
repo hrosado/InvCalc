@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InvCalcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PrimaryTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="InitialInvestment" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TickerSymbol" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PurchasePrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PurchaseShares" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="PercentageDesired" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TargetSalesPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="InvestmentYield" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="EndBalance" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Action" Type="Boolean" />
+    <Property Name="Result" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="InvCalcEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PrimaryTables" EntityType="Self.PrimaryTable" />
+  </EntityContainer>
+</Schema>

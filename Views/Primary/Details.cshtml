@@ -1,0 +1,106 @@
+﻿@model InvCalc.Models.PrimaryTable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PrimaryTable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InitialInvestment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InitialInvestment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TickerSymbol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TickerSymbol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchasePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchasePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseShares)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseShares)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercentageDesired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercentageDesired)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TargetSalesPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TargetSalesPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InvestmentYield)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InvestmentYield)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndBalance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Action)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Action)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
