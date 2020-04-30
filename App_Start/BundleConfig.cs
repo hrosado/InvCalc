@@ -24,6 +24,7 @@ namespace InvCalc
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/Template/jumbotron/jumbotron.css",
                       "~/Content/site.css"));
         }
     }
